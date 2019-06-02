@@ -1,6 +1,6 @@
 {
     "server":"0.0.0.0",
-    "server_port":19328,
+    "server_port":20196,
     "local_port":1080,
     "password":"passw0rd",
     "timeout":600,

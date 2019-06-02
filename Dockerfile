@@ -14,6 +14,6 @@ WORKDIR /
 COPY shadowsocks.json /etc/shadowsocks.json
 
 
-CMD ["ssserver"]
+ENTRYPOINT ["ssserver"]
 
-ENTRYPOINT ["-c","/etc/shadowsocks.json"]
+CMD ["-c","/etc/shadowsocks.json"]
