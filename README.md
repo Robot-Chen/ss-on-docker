@@ -1,13 +1,23 @@
 # ss-on-docker
 install shadowsocks on docker
 
-### how to build 
+### Step 1 -- install docker 
+
+for Ubuntu, 
+https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-using-the-convenience-script
+
+```
+curl -fsSL https://get.docker.com -o get-docker.sh
+sudo sh get-docker.sh
+```
+
+### Step 2 -- build 
 
 ```
 docker build -t peacheychen/ss-on-docker .
 ```
 
-### how to run
+### Step 3 -- run
 
 1.with default json config file
 ```
