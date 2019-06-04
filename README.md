@@ -21,7 +21,7 @@ docker build -t peacheychen/ss-on-docker .
 
 1.with default json config file
 ```
-docker run -d -n shadowsocks -p 20196:20196 --restart peacheychen/ss-on-docker 
+docker run -d --name shadowsocks -p 20196:20196 --restart peacheychen/ss-on-docker 
 ```
 
 2. or customize the parameter by yourself
