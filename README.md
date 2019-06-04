@@ -21,10 +21,10 @@ docker build -t peacheychen/ss-on-docker .
 
 1.with default json config file
 ```
-docker run -d --name shadowsocks -p 20196:20196 --restart peacheychen/ss-on-docker 
+docker run -d --name shadowsocks -p 20196:20196 --restart="always" peacheychen/ss-on-docker 
 ```
 
 2. or customize the parameter by yourself
 ```
-docker run -d --name ss2 -p 22223:22223 peacheychen/ss-on-docker -s 0.0.0.0 -p 22223 -k test4chen -m rc4-md5 --restart
+docker run -d --name ss2 -p 22223:22223  --restart="always" peacheychen/ss-on-docker -s 0.0.0.0 -p 22223 -k test4chen -m rc4-md5
 ```
