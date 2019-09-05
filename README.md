@@ -8,12 +8,18 @@ pls ensure that you have configured the correct firewall
 ```
 wget --no-check-certificate -O installation.sh https://raw.githubusercontent.com/Robot-Chen/ss-on-docker/master/installation.sh  && chmod +x installation.sh && sudo ./installation.sh
 ```
-then
+for client example configuration
 
 ```
-sudo docker run -d --name shadowsocks -p 20196:20196 --restart="always" peacheychen/ss-on-docker 
+{
+    "server":"0.0.0.0",
+    "server_port":20196,
+    "local_port":1080,
+    "password":"passw0rd",
+    "timeout":600,
+    "method":"aes-256-cfb"
+}
 ```
-
 
 ## OR using the step by step way
 
