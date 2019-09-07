@@ -10,7 +10,8 @@ RUN set -ex \
 
 COPY shadowsocks.json /etc/shadowsocks-libev/config.json
 WORKDIR /etc/shadowsocks-libev
-USER nobody
 RUN cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
-ENTRYPOINT ["ssserver"]
+USER nobody
+
+ENTRYPOINT ["ss-server"]
 CMD ["-c", "/etc/shadowsocks-libev/config.json" ]
