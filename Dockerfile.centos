@@ -9,7 +9,7 @@ RUN yum -y update && \
 RUN easy_install pip
 RUN pip install shadowsocks
 
-WORKDIR /
+WORKDIR /etc
 
 COPY shadowsocks.json /etc/shadowsocks.json
 
